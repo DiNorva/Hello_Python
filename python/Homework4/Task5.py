@@ -9,7 +9,7 @@
 """
 
 
-# не поняла как решать самой
+# не поняла как решать самой, поэтому посмотрела урок с семинара и разобрала 
 
 # решение с семинара
 
@@ -50,7 +50,7 @@ def printEquation(equation: str):
 def parseEquation(equation: str):
     eqDict = {}
     equation = equation.replace(' + ', ' ').replace(' - ', ' -')
-    equation = equation.split()
+    equation = equation.split()  # type: ignore
 
 
     for i in equation:

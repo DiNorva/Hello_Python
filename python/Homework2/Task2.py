@@ -7,9 +7,15 @@
 """
 
 n = int(input('Введите число N: '))
-f = 1
-fact = []
-for i in range(1, n+1):
-    f *= i
-    fact.append(f)
-print(fact)
+lst = [1]
+
+for i in range(2, n+1):
+    lst.append(lst[i-2]* i)
+print(lst)
+
+
+
+
+
+
+

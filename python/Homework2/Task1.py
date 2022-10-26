@@ -8,14 +8,14 @@
 """
 
 
-# num = input('Введите дробное число через точку: ')
-# sum = 0
+num = input('Введите дробное число через точку: ')
+sum = 0
 
-# for i in num:
-#     if float(num) < 0:
-#         num = float(num) * (-1)
-#     elif i != '.':
-#         sum += int(i)
+for i in num:
+    if float(num) < 0:
+        num = float(num) * (-1)
+    elif i != '.':
+        sum += int(i)
 
-# print('Сумма чисел = ', sum)
+print('Сумма чисел = ', sum)
 

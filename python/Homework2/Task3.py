@@ -3,14 +3,10 @@
 этой последовательности (для проверки сумма для 4 элементов = 9,06 (примерно))
 """
 
-# from textwrap import indent
 
-# n = int(input('Введите число N: '))
-# f = 1
-# fact = []
-# for i in range(1, n+1):
+n = int(input("Введите число n: "))
+summ = 0
+for i in range(1,n+1):
+    summ += (1+1/i)**i
+print(f"Полученная сумма последовательности (1+1/n)^n равнна {round(summ,2)}")
 
-#     f = (1 + 1/i)**i
-#     fact.append(f)
-# print(fact)
-# print(sum(fact))

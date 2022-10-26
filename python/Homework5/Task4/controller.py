@@ -1,6 +1,7 @@
 # со стрима
 
-import bot
+
+from curses.panel import bottom_panel
 import model
 import view
 
@@ -32,7 +33,7 @@ def enemyTurn():
     mark = model.getMark()
     enemy_field = model.getEnemyField()
     player_field = model.getPlayerField()
-    move = bot.AIMove(field, player_field, enemy_field, model.win)
+    move = bottom_panel.AIMove(field, player_field, enemy_field, model.win)
 
     field[move] = mark
     model.setEnemyMove(move)
