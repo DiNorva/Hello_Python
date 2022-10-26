@@ -5,12 +5,16 @@
 """
 # Первое решение
 
-# import random 
+# использовала zip
 
-# list = ['7', 'True', '1.10', 'Капуста']
-# print(list)
-# res = random.sample(list, len(list))
-# print(res)
+import random 
+
+lst = ['7', 'True', '1.10', 'Капуста']
+ids = [0,1,2,3]
+data = list(zip(lst, ids))
+print(data)
+res = random.sample(data, len(data))
+print(res)
 
 
 # Второе решение

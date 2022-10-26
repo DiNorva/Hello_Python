@@ -13,6 +13,11 @@ for i in range(2, n+1):
     lst.append(lst[i-2]* i)
 print(lst)
 
+# улучшение, используем List Comprehension
+
+lst = [lst[i-2] * i if lst[i-2] != 0 else 1 for i in range(2, n+1, )]
+print(f'Итог {lst}')
+
 
 
 
