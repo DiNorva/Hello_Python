@@ -1,3 +1,5 @@
+# со стрима
+
 import bot
 import model
 import view

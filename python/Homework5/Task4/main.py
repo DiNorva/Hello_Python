@@ -1,3 +1,5 @@
+# со стрима
+
 import controller
 
 controller.intro()

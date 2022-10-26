@@ -1,4 +1,4 @@
-
+# со стрима
 
 def printField(game_field: list):
     print(f'{game_field[0]:^5}|{game_field[1]:^5}|{game_field[2]:^5}')
