@@ -15,6 +15,7 @@ def start():
         if result == None:
             view.devision_by_zero()
             break
+            
         first = model.get_first()
         second = model.get_second()
         view.outputResult(first, second, oper, result)

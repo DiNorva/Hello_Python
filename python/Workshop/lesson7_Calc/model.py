@@ -24,13 +24,12 @@ def set_second(number:int):
 def set_result(oper: str):
     global result
     global second
-
-    # !!! ДЕЛЕНИЕ НА НОЛЬ
-    
-    # if second != 0 and oper == '/':
-    #     result = listOperator.get(oper)(first, second)
+    if second != 0 and oper == '/':
+        result = first/second
     # else:
-    #     result = None
+        
+        
+  
 
 
 def get_first():

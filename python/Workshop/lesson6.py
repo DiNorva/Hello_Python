@@ -83,46 +83,46 @@
 
 
 
-# string = input('Введите выражение: ')
+string = input('Введите выражение: ')
 
-# opSelect = {
-#     "*": lambda x, y: int(x) * int(y),
-#     "/": lambda x, y: (int(x) / int(y)) if int(y) != 0 else division_be_zero(),
-#     "+": lambda x, y: int(x) + int(y),
-#     "-": lambda x, y: int(x) - int(y)}
+opSelect = {
+    "*": lambda x, y: int(x) * int(y),
+    "/": lambda x, y: (int(x) / int(y)) if int(y) != 0 else division_be_zero(),
+    "+": lambda x, y: int(x) + int(y),
+    "-": lambda x, y: int(x) - int(y)}
 
-# string = string.replace(' ', '').strip()
-# string = string.replace('+', ' + ')\
-#     .replace('-', ' - ')\
-#     .replace('*', ' * ')\
-#     .replace('/', ' / ')
-# string = string.split()
+string = string.replace(' ', '').strip()
+string = string.replace('+', ' + ')\
+    .replace('-', ' - ')\
+    .replace('*', ' * ')\
+    .replace('/', ' / ')
+string = string.split()
 
-# def division_be_zero():
-#     print('Деление на ноль!')
-#     exit()
+def division_be_zero():
+    print('Деление на ноль!')
+    exit()
 
-# def deleteElement(string, i):
-#     string.pop(i + 1)
-#     string.pop(i)
+def deleteElement(string, i):
+    string.pop(i + 1)
+    string.pop(i)
 
-# def operation(string, i, oper):
-#     if string[i] == oper:
-#         string[i - 1] = opSelect.get(oper)(int(string[i - 1]), int(string[i + 1]))
-#         deleteElement(string, i)
-#         return True
+def operation(string, i, oper):
+    if string[i] == oper:
+        string[i - 1] = opSelect.get(oper)(int(string[i - 1]), int(string[i + 1]))
+        deleteElement(string, i)
+        return True
 
-# example = ''.join(string)
+example = ''.join(string)
 
-# while len(string)>1:
-#     if '*' in string or '/' in string:
-#         for i in range(len(string)):
-#             if operation(string, i, '*'): break
-#             if operation(string, i, '/'): break
+while len(string)>1:
+    if '*' in string or '/' in string:
+        for i in range(len(string)):
+            if operation(string, i, '*'): break
+            if operation(string, i, '/'): break
 
-#     elif '+' in string or '-' in string:
-#         for i in range(len(string)):
-#             if operation(string, i, '+'): break
-#             if operation(string, i, '-'): break
+    elif '+' in string or '-' in string:
+        for i in range(len(string)):
+            if operation(string, i, '+'): break
+            if operation(string, i, '-'): break
 
-# print(f'{example}={string[0]}')
+print(f'{example}={string[0]}')
