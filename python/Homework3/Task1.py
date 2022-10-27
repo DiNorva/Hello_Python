@@ -10,6 +10,7 @@
 
 from random import randint as rI
 
+
 number = int(input('Введите размер списка: '))
 
 myList = []
