@@ -15,11 +15,14 @@ def show_phone_book(phone_book):
         print('Телефонная книга пуста')
     else:
         for id, item in enumerate(phone_book):
-            print (id, *item)
+            print (id, *item)                     # * -распаковывает
 
 def input_path():
     path = input('Введите имя файла: ')
     return path
+
+def write_file():
+    print('Контакт сохранен')
 
 def input_contact():
     name_contact = input('Введите ФИО контакта: ')
@@ -34,11 +37,6 @@ def input_change():
     value = input('Введите изменения: ')
     return (id, choise, value)
 
-
-
-
-
-
-    
-
-    
+def delete_contact():
+    choice = int(input('Введите номер элемента для удаления: '))
+    print()

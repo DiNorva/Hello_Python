@@ -14,13 +14,17 @@ def start():
                 model.set_path(path)
                 model.open_file()
             case 2:
-                pass
+                path = view.write_file()
+                model.save_file()
             case 3:
                 contact = view.input_contact()
                 model.new_contact(contact)
             case 4:
                 contact = view.input_change()
                 model.change_contact(*contact)
+            case 5:
+                contact = view.delete_contact()
+                model.remove_contact()
             
 
 

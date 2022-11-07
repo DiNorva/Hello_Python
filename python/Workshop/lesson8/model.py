@@ -1,7 +1,8 @@
 import controller
 
 phone_book = []
-path = 'python/lesson8/'
+path = 'Workshop/lesson8/'
+
 
 def get_phone_book():
     global phone_book
@@ -20,6 +21,12 @@ def open_file():
         contact = item.replace('\n', '').split(';')
         phone_book.append(contact)
 
+def save_file():
+    global path 
+    global phone_book
+    with open (path, 'w', encoding='UTF-8') as file:
+        file.write(('\n'.join(phone_book)))
+
 def new_contact(contact):
     global phone_book
     phone_book.append(list(contact))
@@ -27,6 +34,15 @@ def new_contact(contact):
 def change_contact(id, choise, value):
     global phone_book
     phone_book [int(id)][int(choise)] = value
+
+def remove_contact():
+    global path 
+    global phone_book
+    # with open (path, 'w', encoding='UTF-8') as file:
+    #     file.write(('\n'.join(phone_book)))
+
+
+
     
 
 
